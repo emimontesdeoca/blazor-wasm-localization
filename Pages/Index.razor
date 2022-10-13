@@ -1,0 +1,14 @@
+﻿@page "/"
+@inject IStringLocalizer<Resource> localizer
+@using Microsoft.AspNetCore.Components;
+@using Microsoft.JSInterop;
+@using System.Globalization;
+
+<PageTitle>Index</PageTitle>
+
+<h1>@localizer["Hello"], @localizer["World"]!</h1>
+
+Welcome to your new app.
+
+
+<SurveyPrompt Title="How is Blazor working for you?" />
